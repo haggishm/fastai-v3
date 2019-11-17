@@ -14,13 +14,13 @@ export_file_url = 'https://www.dropbox.com/s/r3rugu6garhskzj/export2.pkl?raw=1'
 export_file_name = 'export2.pkl'
 
 classes = [
-    nv='Melanocytic nevi',       # common mole
-    mel='Melanoma',              # very bad
-    bkl='Benign keratosis',      # benign is good
-    bcc='Basal cell carcinoma',  # not so good
-    akiec='Actinic keratoses',   # potential precancer
-    vasc='Vascular lesions',     # could be benign or malignant
-    df='Dermatofibroma',         # benign
+    'Melanocytic nevi',       # common mole
+    'Melanoma',              # very bad
+    'Benign keratosis',      # benign is good
+    'Basal cell carcinoma',  # not so good
+    'Actinic keratoses',   # potential precancer
+    'Vascular lesions',     # could be benign or malignant
+    'Dermatofibroma'         # benign
 ]
 
 app = Starlette()
