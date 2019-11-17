@@ -13,8 +13,15 @@ from starlette.staticfiles import StaticFiles
 export_file_url = 'https://www.dropbox.com/s/r3rugu6garhskzj/export2.pkl?raw=1'
 export_file_name = 'export2.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
-path = Path(__file__).parent
+classes = [
+    nv='Melanocytic nevi',       # common mole
+    mel='Melanoma',              # very bad
+    bkl='Benign keratosis',      # benign is good
+    bcc='Basal cell carcinoma',  # not so good
+    akiec='Actinic keratoses',   # potential precancer
+    vasc='Vascular lesions',     # could be benign or malignant
+    df='Dermatofibroma',         # benign
+]
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
