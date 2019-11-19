@@ -14,13 +14,13 @@ export_file_url = 'https://www.dropbox.com/s/r3rugu6garhskzj/export2?raw=1'
 export_file_name = 'export2'
 
 classes = [
-    nv='Melanocytic nevi',       # common mole
-    mel='Melanoma',              # very bad
-    bkl='Benign keratosis',      # benign is good
-    bcc='Basal cell carcinoma',  # not so good
-    akiec='Actinic keratoses',   # potential precancer
-    vasc='Vascular lesions',     # could be benign or malignant
-    df='Dermatofibroma',         # benign
+    'Melanocytic nevi',       # nv common mole
+    'Melanoma',              # mel very bad
+    'Benign keratosis',      # bkl benign is good
+    'Basal cell carcinoma',  # bcc not so good
+    'Actinic keratoses',   # akeic potential precancer
+    'Vascular lesions',     # vasc could be benign or malignant
+    'Dermatofibroma'         # df benign
 ]
 
 path = Path(__file__).parent
