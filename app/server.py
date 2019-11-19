@@ -22,6 +22,7 @@ classes = [
     'Vascular lesions',     # could be benign or malignant
     'Dermatofibroma'         # benign
 ]
+path = Path(__file__).parent
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
