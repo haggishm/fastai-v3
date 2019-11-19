@@ -14,14 +14,15 @@ export_file_url = 'https://www.dropbox.com/s/r3rugu6garhskzj/export2?raw=1'
 export_file_name = 'export2'
 
 classes = [
-    'Melanocytic nevi',       # common mole
-    'Melanoma',              # very bad
-    'Benign keratosis',      # benign is good
-    'Basal cell carcinoma',  # not so good
-    'Actinic keratoses',   # potential precancer
-    'Vascular lesions',     # could be benign or malignant
-    'Dermatofibroma'         # benign
+    nv='Melanocytic nevi',       # common mole
+    mel='Melanoma',              # very bad
+    bkl='Benign keratosis',      # benign is good
+    bcc='Basal cell carcinoma',  # not so good
+    akiec='Actinic keratoses',   # potential precancer
+    vasc='Vascular lesions',     # could be benign or malignant
+    df='Dermatofibroma',         # benign
 ]
+
 path = Path(__file__).parent
 
 app = Starlette()
